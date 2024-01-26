@@ -16,14 +16,6 @@ function closeModal() {
 function saveToLocalStorage() {
   const savedMarkerData = JSON.stringify(markerData);
   localStorage.setItem("markers", savedMarkerData);
-
-  window.addEventListener("click", () => {
-    const savedMarker = localStorage.getItem("markers");
-    if (savedMarkerData) {
-      markerData = JSON.parse(savedMarker);
-      updateMarkerList();
-    }
-  });
 }
 
 btnEl.addEventListener("click", openModal);
