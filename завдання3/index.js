@@ -65,7 +65,7 @@ function updateMarkerList() {
 }
 
 function deleteMarker(index) {
-  alert("Ви впевнені, що хочете видалити цього студента?");
+  alert("delete?");
   markerData.splice(index, 1);
   saveToLocalStorage();
   updateMarkerList();
